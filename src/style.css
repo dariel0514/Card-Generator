@@ -1,1 +1,41 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+.grid-container {
+  width: 200px;
+  height: 800px;
+}
+.grid-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-gap: 5px;
+  background-color: white;
+  color: black;
+  font-size: 1.5em;
+  padding: 10px;
+  border-radius: 5%;
+  box-shadow: 0px 5px 15px grey;
+}
+
+.heart {
+  text-align: center;
+  align-self: center;
+  font-size: 2em;
+  color: red;
+}
+
+.top-left {
+  padding: 0.1em;
+}
+
+.bottom-right {
+  align-self: end;
+  transform: rotate(180deg);
+}
+
+body {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  margin-top: 15%;
+  justify-content: center;
+}
